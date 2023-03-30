@@ -1,6 +1,8 @@
 import React from 'react';
 import {useState } from 'react';
 import { Routes,Route, Link } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Africa from './components/Navbar/Africa';
 import America from './components/Navbar/America';
 import Asia from './components/Navbar/Asia';
@@ -17,7 +19,7 @@ const App = () => {
     if(value){
       setNewV(value);
     } else {
-      alert("please enter a country name")
+      toast("Please enter a country name");
       return;
     }
   }
@@ -41,6 +43,7 @@ const App = () => {
               <input type='submit' value="Search" onClick={handleValue} className="cursor-pointer"/>
           </Link>
         </div>
+        <ToastContainer></ToastContainer>
       </nav>
       
       <Routes>
