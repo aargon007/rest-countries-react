@@ -13,10 +13,10 @@ const SearchByName = ({inputValue}) => {
         <div>
             <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:px-14 lg:px-24 px-5 pb-10'>
                 {
-                    inputValue && country.map(country => <CountryDetails
+                    inputValue ? country.map(country => <CountryDetails
                          country={country}
                           key={country.cca3}
-                          ></CountryDetails>)
+                          ></CountryDetails>) : <h1 className='text-center text-xl font-semibold text-red-500'>Please enter a country name. Such as - india</h1>
                 }
             </div>
         </div>
