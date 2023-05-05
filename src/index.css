@@ -7,6 +7,6 @@
         @apply px-4 py-1 rounded-md text-white
     }
     .nav{
-        @apply flex flex-wrap gap-5 mt-5 mb-10 md:px-14 lg:px-24 px-5 max-w-full mx-auto
+        @apply flex flex-wrap md:justify-between gap-5 mt-5 mb-10 max-w-full mx-auto
     }
 }

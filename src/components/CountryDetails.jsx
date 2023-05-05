@@ -1,7 +1,7 @@
 import React from 'react';
 
-const CountryDetails = (props) => {
-    const {flags, name, capital,area, population, continents,currencies, languages, timezones, borders} = props.country;
+const CountryDetails = ({country}) => {
+    const {flags, name, capital,area, population, continents,currencies, languages, timezones, borders} = country;
     return (
         <div className='border-2 p-5  font-medium space-y-4 rounded-md bg-blue-100 shadow-lg'>
             <img src={flags.png} alt="" className='mx-auto h-48 w-10/12' />
